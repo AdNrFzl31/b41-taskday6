@@ -50,29 +50,29 @@
     <div>
       <h2 class="text-center fw-semibold mt-5 mb-4">ADD MY PROJECT</h2>
 
-      <form class="container mb-5" style="width: 350px;">
+      <form class="container mb-5" style="width: 350px;" onsubmit="addProject(event)">
         <div class="mb-3">
-          <label for="input-name" class="form-label mb-0">Project Name</label>
-          <input type="text" id="input-name" class="form-control" placeholder="Enter name project...">
+          <label for="input-nameProject" class="form-label mb-0">Project Name</label>
+          <input type="text" id="input-nameProject" class="form-control" placeholder="Enter name project...">
         </div>
 
         <div class="container mb-3">
           <div class="row">
             <div class="col-6 ps-0 pe-2">
-              <label for="input-start-date" class="form-label">Start Date</label>
-              <input type="date" id="input-start-date" class="form-control">
+              <label for="input-startDate" class="form-label">Start Date</label>
+              <input type="date" id="input-startDate" class="form-control">
             </div>
 
             <div class="col-6 pe-0 ps-2">
-              <label for="input-end-date" class="form-label">End Date</label>
-              <input type="date" id="input-end-date" class="form-control">
+              <label for="input-endDate" class="form-label">End Date</label>
+              <input type="date" id="input-endDate" class="form-control">
             </div>
           </div>
         </div>
 
         <div class="mb-3">
-          <label for="input-yourmessage">Your Message</label>
-          <textarea id="input-yourmessage" class="form-control" cols="5" rows="4" style="resize: none;" placeholder="Enter your description..."></textarea>
+          <label for="description">Your Message</label>
+          <textarea id="description" class="form-control" cols="5" rows="4" style="resize: none;" placeholder="Enter your description..."></textarea>
         </div>
 
         <div class="mb-3">
@@ -113,8 +113,8 @@
         </div>
 
         <div class="mb-3">
-          <label for="input-upload-image" class="form-label">Upload Image</label>
-          <input class="form-control" type="file" id="input-upload-image">
+          <label for="input-image" class="form-label">Upload Image</label>
+          <input class="form-control" type="file" id="input-image">
         </div>
 
         <div class="submit-btn mt-5 d-flex justify-content-end">
@@ -124,6 +124,8 @@
       </form>
     </div>
   </section>
+  
+  <script src="/public/js/add-my-project.js"></script>
 </body>
 
 </html>
